@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Madad - Get Cash Today, Against Due Invoices</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link href="./css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body class="font-sains" style="font-family: 'Inter'">
+<!-- Header -->
+<header class="bg-white">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+          <img
+              src="https://s3-alpha-sig.figma.com/img/33e6/28a3/67f687dc1e644c0963ae61493933d516?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZNJeU5VQv4lEoZVQwqRwzd5Wv2eKkGQ4BtfEbhrPagrZOaAeYiCo3xecjWcXlLS25fw9z~tGEo14yhSJqnXGC1k8hJIn9FS50ceW890Yxu~gUEUtTo0SY6rxi624iJoBzB424yZyb1zg2bs5fZ57qRAasbTfrESPH3n4MHhqtcNyXH-QgMx22UXVdTfly9FwdpRSfnGo2Fn37Ip5RaM9Lel3UCzX2iWeQ97clPC7FjxUV1v66JoTZZuoqQJHETfU~qS-4xVFS~yTg2SonQOjAuxsT7u3mNidXl3OmEN2hjk0rm9LiGg3uQhjKcel6bd9jtB-BE4ycD5h2YBrylwKzw__"
+              alt="Madad logo" class="h-8" style="width: 110px; height: 82px; margin-left: 50px;" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-14" style="font-weight: bold;">
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600"style="font-family: 'Inter', sans-serif; text-decoration:none">Home</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600"style="font-family: 'Inter', sans-serif; text-decoration:none">About Us</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600"style="font-family: 'Inter', sans-serif; text-decoration:none">Invoice Discounting</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600"style="font-family: 'Inter', sans-serif; text-decoration:none">Investors</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600"style="font-family: 'Inter', sans-serif; text-decoration:none">Blog</a>
+          </li>
+      </ul>
+
+      <!-- Language and Button (Visible in all modes) -->
+      <div class="flex items-center space-x-15">
+          <a href="#" class="text-gray-600 hover:text-green-600 flex items-center">
+              <span>العربية</span>&nbsp;&nbsp;
+              <img
+                  src="https://s3-alpha-sig.figma.com/img/58a8/ab49/be7a3cf95ba947f048d329c43e789e66?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qYbSjUxQogDd1rMgetnxZIH~r49~ePNjJYOPRxy1tkeKochzXM5tuBHWLQuyqakzPqgZAPV8vnvpudPo0X6iUThTPruUz6CadWanxoaMqIW57pZsRQBDRk64MDAvcEjsawH~HpmGxofIGEyAA0~58Kw2jJXbDMnCt6Zu6eRo8Y3AOzVkZw7xKdQ6tcFBQXqrnc4QWiWrVXz-XGGT8zHFyCNwd1DcMyEuUcnuqhuAQhiy4OVJByokbrZCaA8F1i-6BKuHnOwMfHvYg799zu9xfgVPF7wXmWogAifthlwtRk4qtdipZYsTj9vV3H9xosR35QRUhRpZ251WQUBAAGdbWw__"
+                  style="width: 28px; height: 28px">
+          </a>&nbsp;&nbsp;
+          <a href="#" 
+              class="bg-dark-green text-white hover:bg-green-500" 
+              style="font-weight: bold; margin-right: 50px; padding: 5px 10px; display: inline-block; height:35px;width: 150px; text-align: center; font-family: 'Inter', sans-serif">
+              Join Wait List
+          </a>
+      </div>
+
+      <!-- Hamburger Menu Icon - Visible only in mobile mode -->
+      <button id="hamburger" class="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded focus:outline-none">
+          <span class="bg-gray-600 block w-full h-1 mb-1"></span>
+          <span class="bg-gray-600 block w-full h-1 mb-1"></span>
+          <span class="bg-gray-600 block w-full h-1"></span>
+      </button>
+  </nav>
+
+  <!-- Mobile Menu - Hidden by default -->
+  <div id="mobile-menu" class="hidden bg-white shadow-lg">
+      <ul class="flex flex-col p-4 space-y-2">
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600 font-bold">Home</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600 font-bold">About Us</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600 font-bold">Invoice Discounting</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600 font-bold">Investors</a>
+          </li>
+          <li>
+              <a href="#" class="text-gray-600 hover:text-green-600 font-bold">Blog</a>
+          </li>
+      </ul>
+  </div>
+</header>
+
+      </div>
+    </nav>
+  </header>
+  <br><br>
+  <!-- Main Section -->
+  <main class="container mx-auto px-4 py-12" style="font-family: Inter, sans-serif;">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0" style="margin-left: 60px;">
+        <h1 class="text-3xl md:text-5xl font-bold text-dark-green mb-4">
+          Get Cash Today, Against Due Invoices
+        </h1><br>
+        <p class="text-xl mb-4">Waiting for your invoices to get paid?</p><br>
+        <p class="text-xl mb-6">
+          Wait no more, discount your unpaid <br>invoices to get instant cash
+        </p><br><br><br><br><br><br><br>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email"
+            class="flex-grow border border-gray-300 p-2 rounded-l focus:outline-none focus:ring-2 focus:ring-green-600" />
+          <button type="submit" class="bg-dark-green text-white px-4 py-2 rounded-r hover:bg-green-800">
+            Join Wait List
+          </button>
+        </form>
+      </div>
+      <div class="md:w-1/2 ">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/99e5/3631/c7534c1542229821c08a3b7c769d9a92?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=atoUoGUJy7OVasLUuCqe97igiL5ZEj8vNzTcUYjULgplwgNCHF3V4Kmw0Vw3m2fZwX1m6njSf1fTNvNQ0~izfjNFWJJQQwkWWq~cYnXB7HKjZodbBpowNYuBjkzg~NKZbnNWOcj8vyuCCa8fKc0tQyJ5bNVWdjcIidkX~hYpCcfZF6YaZ4IlBL39wvLZdK-Or~a1jwoUGSKUwdMBfavDp0c4bYolyGg8db9sBKzDC~73V3NF7yyQGqIjwoDnxp5cZyO11CICMs2T~MDpuo2GjIi8AKODS8kvLIZvFJOE5OVXLuE3VcDn1Q9SVs~t29HVNTyuOOCYeZGOm~yvbTCANg__"
+          alt="Invoice discounting illustration" class="w-full" />
+      </div>
+    </div><br><br>
+    <div class="custom-border"></div>
+    <footer class="text-dark-green text-center py-4">
+      <p class="text-2xl font-bold">Coming Soon in Qatar!</p>
+    </footer>
+  </main>
+  <!-- Section 2 -->
+  <section class="section-2">
+    <div class="container">
+      <h1 style="font-weight: bold;">Transform the way you finance your business. Get access to:</h1>
+      <div class="button-group">
+        <button data-target="multiple-financiers" class="active">
+          Multiple Financiers
+        </button>
+        <button data-target="immediate-cash">Immediate Cash</button>
+        <button data-target="credit-score">Credit Score</button>
+        <button data-target="msme-ecosystem">MSME Ecosystem</button>
+      </div>
+    </div>
+    <!-- Content Sections -->
+ <div id="multiple-financiers" class="content active">
+  <h2>Get access to multiple financiers</h2>
+  <p>
+    We understand your dependence on your bank for your financing needs.
+  </p><br>
+  <p>
+    We break that dependence and provide you access to multiple
+    financiers, who look at your application and if approved provide you
+    with instant cash.
+  </p>
+  <p>We work with Banks, NBFCs as well as High Net-worth Individuals.</p>
+</div>
+<div id="immediate-cash" class="content">
+  <h2>Get immediate cash in your account</h2>
+  <p>
+    We know your pain of waiting for weeks and sometimes months to get
+    access to funds.
+  </p><br>
+  <p>
+    Our tech-enabled system works seamlessly to provide you with instant
+    cash. Apply for discounting invoice as soon as you raise it to your
+    customer, so that you can have cash against the invoice in your
+    account within days.
+  </p>
+</div>
+<div id="credit-score" class="content">
+  <h2>Build your own Business Credit Score</h2>
+  <p>
+    We feel your pain of proving your business's worth to Banks to get
+    access to funds
+  </p><br>
+  <p>
+    We bring the Business Scoring System to Qatar, that enables you to
+    show your creditworthiness to different stakeholders with just one
+    score. Just like your personal credit score. You can use the score not
+    just for financing but also for other business needs like renting
+    property, buying machinery etc.
+  </p>
+</div>
+<div id="msme-ecosystem" class="content">
+  <h2>Become a part of the MSME community in Qatar</h2>
+  <p>
+    We understand your search for best practices for various business
+    aspects.
+  </p><br>
+  <p>
+    We are creating the biggest MSMEs community in Qatar, where you learn,
+    share, and showcase the best practices across various aspects of your
+    business with/from industry experts and fellow businesses in your
+    sector.
+  </p>
+</div>
+</section>
+  <!-- Section 3 -->
+  <section class="section-3">
+    <div class="container">
+      <h1 class="title">
+        A seamless, quick and hassle-free<br> process to get access to cash
+      </h1>
+      <div class="process">
+        <div class="line-container">
+          <div class="dashed-line"></div>
+          <div class="solid-line"></div>
+          <div class="arrow"></div>
+        </div>
+        <div class="step" data-step="1">
+          <div class="circle"></div>
+          <h2 class="step-title" style="font-size: 35px" ;>Step 1: Become a member</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">
+                Easy registration at the comfort of your own location
+              </p>
+              <ul class="list">
+                <li>Fill a simple registration form</li>
+                <li>Upload relevant business documents</li>
+                <li>Complete directors' KYC</li>
+              </ul>
+              <br />
+              <hr />
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No need to visit branch</p>
+                <p>No paperwork</p>
+                <p>No collateral</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" data-step="2">
+          <h2 class="step-title" style="font-size: 35px" ;>Step 2: Get verified on Madad</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">
+                We will review and verify your membership
+              </p>
+              <ul class="list">
+                <li>Customer support assisted verification</li>
+                <li>Thorough but quick checks</li>
+                <li>Once in a year check</li>
+              </ul>
+              <br />
+              <hr />
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No PROs needed</p>
+                <p>No follow-ups</p>
+                <p>No un-informed waits</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <!-- <h2 class="step-title">Step 3: Apply for funding</h2> -->
+          <h2 class="step-title" style="font-size: 35px;">Step 3: Apply to discount invoice</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">Quick application against a newly raised invoice</p>
+              <ul class="list">
+                <li>Upload relevant genuine invoice</li>
+              <li>Upload related trade documents</li>
+              </ul>
+              <br />
+              <hr />
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No credit line needed</p>
+                <p>No complex process</p>
+                <p>No paper printing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <h2 class="step-title" style="font-size: 35px" ;>Step 4: Access to financiers</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">We will review the documents and share with financiers</p>
+              <ul class="list">
+                <li>Customer support assisted review</li>
+                <li>Open application to multiple financiers</li>
+              </ul>
+              <br />
+              <hr />
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No dependence on just one financier</p>
+                <p>No confusing communications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <h2 class="step-title" style="font-size: 35px" ;>Step 5: Get offer and instant cash</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">Financier accept your application and you get instant cash</p>
+              <ul class="list">
+                <li>Accept the offer by financier</li>
+                <li>Get 80% of invoice amount (minus fee)</li>
+              </ul>
+              <br />
+              <hr />
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No long wait times</p>
+                <p>No hidden charges</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <h2 class="step-title" style="font-size: 35px" ;>Step 6: Seamless repayment</h2>
+          <div class="step-content">
+            <div class="step-left">
+              <p class="subtitle">Easy repay as per the terms of discounting contract</p>
+              <ul class="list">
+                <li>Online re-payment of the due amount</li>
+                <li>Build your creditworthiness</li>
+              </ul>
+              <br />
+              <!-- <hr /> -->
+            </div>
+            <div class="step-right">
+              <div class="benefits">
+                <p>No burning personal savings on business</p>
+                <p>No need to be an unknown business</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step" data-step="5">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+        <!--  What is Invoice Discounting?   should in one line not split line theen i used this style  -->
+
+  
+<!-- -----web------ -->
+
+
+   <div class="container"> 
+
+  <section class="section-4">
+    <div class="container6">
+      <div class="left-column">
+
+        <h1 style="color: #006666; font-size: 40px; font-weight: bold; font-size: 1.8rem; 
+        color: #034c3c;
+        margin-bottom: 5px;
+        white-space: nowrap;  ">
+          What is Invoice Discounting?
+        </h1>
+
+      </div>
+    <div id="invoiceText" style="font-family: 'Inter', sans-serif; margin-left: 160px; font-weight: 200; line-height: 36.31px; text-align: justify;">
+      When you send an invoice to a customer, you have to wait 30, 60, 90 or even 120 days to get paid.
+      <br><br>
+      But with invoice discounting on Madad, you don't have to wait! We give you most of the invoice amount upfront, so you can use that money to keep your business running smoothly—whether it's paying bills, or taking on new projects.
+      <br><br>
+      Once your customer pays the invoice, the rest is settled, and you're ready to move forward, without any complicated process or paperwork.
+  </div>
+    </div>
+    </div>
+  </section> 
+</div>
+
+<!-- -mobile----- -->
+
+
+<div class="faq-container" style="flex-direction: column; align-items: flex-start; padding: 10px;">
+  <div class="faq-question" style="font-size: 20px; font-size: 2.0rem ;margin-bottom: 10px;margin-left: 30px; width: 100%;  font-family: 'Inter', sans-serif";>
+    Frequently Asked Questions
+  </div>
+</div>
+
+  <!-- Section 10 -->
+
+  <section class="section-10">
+    <div class="container">
+      <div class="steps">
+        <div class="step">
+          <div class="right-content">
+
+            <div class="collapsible-section">
+              <p
+                style="font-family: inter, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <strong>Is Madad Platform Live?</strong>
+                <img src="https://www.svgrepo.com/show/4166/up-arrow.svg" alt="Toggle" style="margin-left: 10px;"
+                  class="toggle-arrow" onclick="toggleContent(this)" />
+              </p>
+              <div class="collapsible-content"
+                style="font-family: Arial, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <br />
+                Madad platform is not live yet. It is in the regulatory application phase. 
+                However, you can join the waiting list to get notifications when we are live.
+              </div>
+            </div>
+            <br />
+            
+            <div class="collapsible-section">
+              <p
+                style="font-family: Arial, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <strong>Do I need to submit documents now?</strong>
+                <img src="https://www.svgrepo.com/show/4166/up-arrow.svg" alt="Toggle" style="margin-left: 10px;"
+                  class="toggle-arrow" onclick="toggleContent(this)" />
+              </p>
+              <div class="collapsible-content"
+                style="font-family: Arial, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <br />
+                No, you just have to join the waiting list with your email id, so that you get the notifications in your
+                inbox when we go live.
+              </div>
+            </div>
+            <br />
+            <div class="collapsible-section">
+              <p
+                style="font-family: Arial, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <strong>Is Madad a Qatari platform?</strong>
+                <img src="https://www.svgrepo.com/show/4166/up-arrow.svg" alt="Toggle" style="margin-left: 83px;"
+                  class="toggle-arrow" onclick="toggleContent(this)" />
+              </p>
+              <div class="collapsible-content"
+                style="font-family: Arial, sans-serif; margin: 0; display: inline-flex; align-items: center;margin-left: 40px;">
+                <br />
+                Yes, Madad is a Qatari platform, based in Doha.
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+      <div class="notification" style="font-family: 'Inter', sans-serif";>
+        <h2><strong>Don't miss the opportunity to get funded</strong></h2>
+        <form>
+          <input type="email" id="email" name="email" placeholder="Enter Email" required
+            style="font-style: italic" /><br /><br />
+          <button type="submit" style="font-weight: bold">Join Waiting List</button><br /><br /><br />
+        </form>
+      </div>
+    </div>
+  </section>
+<hr>
+  <!-- Footer -->
+  <footer class="footer-page-body">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3 style="color: gray; font-weight: bold;">Company</h3>
+
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Shariah</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 style="color: gray; font-weight: bold;">For MSMEs</h3>
+        <ul>
+          <li><a href="#">Invoice discounting</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 style="color: gray; font-weight: bold;">For Investors</h3>
+        <ul>
+          <li><a href="#">Become a partner</a></li>
+          <li><a href="#">Signup / Signin</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 style="color: gray; font-weight: bold;">Resources</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Customer protection</a></li>
+          <li><a href="#">Report a violation</a></li>
+          <li><a href="#">Contact number (free)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr style="border: 1px solid gray; width: 90%; margin: 20px auto;" />
+
+    <div class="footer-info">
+      <img
+        src="https://s3-alpha-sig.figma.com/img/8cbc/d50b/6b3fb280777be4bf82c4e8a8fa1fa37e?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JvL2VhwmXKgfiaNO16R7VZ0M3bvAjHbjFkXnfbr1WBkAQOD6H-mR6-zq-jbxx2arbDrSKN~LYv8y-4dFHfTYU7lB8pTM691vkMxTYbNYfyM8iQRYRgRZ4yLY3Zleiw~pfAMhKlJ6iDjpAnkAl9hZiydUFZAcyNXa5AZLMenNBLgu79qHsabuSj0XH32jqjjay-CFG0KotGDeSK1QNwSaujH6g5cQp-EAirC6Jx9EItv2SVb6xoomP5-cKfaZGpw57Jv~yvujUzV2QGevxUbXUCsj0p-ZmTkvRkAlXMZnwkvGh9N-gv3NLJlwx0ULKYyoAEffnutcEjPXs~lcDEIxnA__"
+        alt="Madad Logo" class="footer-logo" />
+      <div class="footer-address">
+        <p>
+          Madad Fintech is in the processes of licensing and not yet live.
+        </p>
+        <p>
+          Address: 201-42, Kate Business Center, Al Bustan Building,<br> Al Sadd,
+          Doha, Qatar
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/madad-fintech" target="_blank">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/fb53/786d/346403ccfa6886ace5489641496e7434?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FGgBEz4AxFV22TpNsUnbbOK~QBTypF~n-QnNG6cbeXM3dMtmeAYD4bUOZQUam7tFL41iXKH8CyhOjcWYVcTwXKHaK6PBbp5utHuwtZFogVmXlY1bEOXh0pg5jWOg05Qwu78CzQUlRW98r7vUQflJOkp39C9x66MuRBLMR9aZwz~U1eXm6BKhKc683R3x7f6l2coY891BlegYcQajX4gL64Cvm~J8zP7TkHC-aeYy6~4w8hBTdY5Kwl0sjul-4wvGwWHuHIQnw6tK5v6w0f7bRlmHUKtQxb1UsHdSMbRMVEbNwttgxtUy56SjYNbg1ybhzfZFWYeFZXZtSsla~6MBUQ__"
+            alt="LinkedIn" class="social-icon" />
+        </a>
+      </div>
+    </div><br>
+    <hr style="border: 1px solid gray; width: 90%; margin: 20px auto;" />
+
+
+    <div class="footer-copyright">
+      <p>&copy; <strong>All rights reserved by Madad Fintech<strong></p>
+      <br><br>
+      <br><br>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD4l01eVhwlPGdO-RdyxAm3ARyou9zK3AI",
+      authDomain: "madad-web-app.firebaseapp.com",
+      projectId: "madad-web-app",
+      storageBucket: "madad-web-app.appspot.com",
+      messagingSenderId: "1081712621982",
+      appId: "1:1081712621982:web:873d558f4dc5b25d1cfe8f",
+      measurementId: "G-JP7ZTVNPT5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+
+</html>
